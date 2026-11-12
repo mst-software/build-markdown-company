@@ -1,0 +1,29 @@
+{
+  "name": "build-markdown-document",
+  "version": "1.0.0",
+  "description": "Chuyển Markdown sang PDF có bìa, mục lục, logo MST Software",
+  "main": "src/md2pdf.js",
+  "scripts": {
+    "pdf": "node src/md2pdf.js",
+    "example": "node src/md2pdf.js examples/sample/sample.md --toc",
+    "template": "node src/md2pdf.js docs/template.md"
+  },
+  "keywords": [],
+  "author": "MST Software",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "highlight.js": "^11.12.0",
+    "markdown-it": "^15.0.3",
+    "markdown-it-anchor": "^10.1.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "mermaid": "^12.3.0",
+    "pdf-lib": "^1.17.1",
+    "puppeteer-core": "^25.17.0"
+  },
+  "bin": {
+    "md2pdf": "src/md2pdf.js"
+  },
+  "private": true
+}
